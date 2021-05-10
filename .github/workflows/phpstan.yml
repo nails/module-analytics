@@ -9,6 +9,9 @@ jobs:
 
             -   name: Setup PHPStan
                 uses: php-actions/composer@v5
+                with:
+                    php_version: 7.3
+                    php_extensions: intl
 
             -   name: PHPStan Static Analysis
                 uses: php-actions/phpstan@v2
