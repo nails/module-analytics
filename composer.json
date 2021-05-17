@@ -38,6 +38,11 @@
             "Test\\Analytics\\": "tests\/"
         }
     },
+    "suggest": {
+        "nails/driver-analytics-fbpixel": "Adds support for Facebook Pixel.",
+        "nails/driver-analytics-google": "Adds support for Google Analytics.",
+        "nails/driver-analytics-hotjar": "Adds support for HotJar."
+    },
     "extra": {
         "nails": {
             "moduleName": "analytics",
