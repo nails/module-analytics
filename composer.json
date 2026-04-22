@@ -1,12 +1,10 @@
 {
     "name": "nails/module-analytics",
-    "keywords":
-    [],
+    "keywords": [],
     "homepage": "http://nailsapp.co.uk/modules/analytics",
     "description": "This module provides a unified API for loading, configuring, and using analytic platforms.",
     "license": "MIT",
-    "authors":
-    [
+    "authors": [
         {
             "name": "Pablo de la Pena",
             "email": "p@nailsapp.co.uk",
@@ -14,55 +12,44 @@
             "role": "Developer"
         }
     ],
-    "support":
-    {
+    "support": {
         "email": "hello@nailsapp.co.uk"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require":
-    {
+    "require": {
+        "php": ">=8.3",
         "nails/common": "dev-feature/pre-new-admin"
     },
-    "require-dev":
-    {
-        "phpunit/phpunit": "9.*",
-        "phpstan/phpstan": "1.*"
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "phpstan/phpstan": "^2.0"
     },
-    "scripts":
-    {
+    "scripts": {
         "test": "./vendor/bin/phpunit",
         "analyse": "./vendor/bin/phpstan analyse -c .phpstan/config.neon"
     },
-    "autoload":
-    {
-        "psr-4":
-        {
+    "autoload": {
+        "psr-4": {
             "Nails\\Analytics\\": "src/"
         }
     },
-    "autoload-dev":
-    {
-        "psr-4":
-        {
+    "autoload-dev": {
+        "psr-4": {
             "Test\\Analytics\\": "tests/"
         }
     },
-    "suggest":
-    {
+    "suggest": {
         "nails/driver-analytics-fbpixel": "Adds support for Facebook Pixel.",
         "nails/driver-analytics-google": "Adds support for Google Analytics.",
         "nails/driver-analytics-hotjar": "Adds support for HotJar."
     },
-    "extra":
-    {
-        "nails":
-        {
+    "extra": {
+        "nails": {
             "moduleName": "analytics",
             "type": "module",
             "namespace": "Nails\\Analytics\\",
-            "data":
-            {}
+            "data": {}
         }
     }
 }
